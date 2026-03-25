@@ -1,0 +1,460 @@
+
+*** Running vivado
+    with args -log top_v3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_v3.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Mar 23 18:50:44 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_v3.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/utils_1/imports/synth_1/top_v3.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/utils_1/imports/synth_1/top_v3.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_v3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 790226
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2230.012 ; gain = 480.875 ; free physical = 589 ; free virtual = 4732
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9339] data object 'rx_code' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:186]
+INFO: [Synth 8-6826] previous declaration of 'rx_code' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:173]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'rx_code' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:186]
+INFO: [Synth 8-6157] synthesizing module 'top_v3' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1/.Xil/Vivado-790168-rocco/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1/.Xil/Vivado-790168-rocco/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/rx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/rx.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:215]
+INFO: [Synth 8-6157] synthesizing module 'adc_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/adc_control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adc_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/adc_control.v:3]
+WARNING: [Synth 8-7071] port 'serdes_ce' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:329]
+WARNING: [Synth 8-7071] port 'tx_empty' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:329]
+WARNING: [Synth 8-7023] instance 'u_adc' of module 'adc_control' has 20 connections declared, but only 18 given [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:329]
+INFO: [Synth 8-6157] synthesizing module 'scan_chain_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/new/scan_chain_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scan_chain_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/new/scan_chain_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tx_fifo' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1/.Xil/Vivado-790168-rocco/realtime/tx_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tx_fifo' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1/.Xil/Vivado-790168-rocco/realtime/tx_fifo_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:398]
+INFO: [Synth 8-6157] synthesizing module 'baud_match' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/baud_match.v:4]
+	Parameter M bound to: 8 - type: integer 
+WARNING: [Synth 8-6104] Input port 'baud_clk' has an internal driver [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/baud_match.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'baud_match' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/baud_match.v:4]
+INFO: [Synth 8-6157] synthesizing module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/tx.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'tx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/tx.v:4]
+WARNING: [Synth 8-689] width (4) of port connection 'tx_state' does not match port width (2) of module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:421]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:573]
+WARNING: [Synth 8-6104] Input port 'EXT_ADC_DATA' has an internal driver [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'top_v3' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:3]
+WARNING: [Synth 8-6014] Unused sequential element dout_top_sync0_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/adc_control.v:43]
+WARNING: [Synth 8-6014] Unused sequential element dout_top_sync1_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/adc_control.v:44]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/adc_control.v:82]
+WARNING: [Synth 8-6014] Unused sequential element serdes_cnt_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/adc_control.v:83]
+WARNING: [Synth 8-6014] Unused sequential element cnt_read_reg_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/tx.v:47]
+WARNING: [Synth 8-3848] Net btn1_pulse in module/entity top_v3 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:78]
+WARNING: [Synth 8-3848] Net baud_tick in module/entity top_v3 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:153]
+WARNING: [Synth 8-3848] Net rx_full in module/entity top_v3 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/sources_1/imports/new/top_v3.v:157]
+WARNING: [Synth 8-3917] design top_v3 has port PWR_EN driven by constant 1
+WARNING: [Synth 8-3917] design top_v3 has port TEST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROLL_SEL driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROLL_CLK driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port EXT_ADC_CONV driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port COL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port VLN_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port SHS_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port SHR_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port CLAMP_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port EXT_ADC_CONV_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port SPI_CLK_ADC_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_RST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_SEL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ADDR_LATCH driven by constant 0
+WARNING: [Synth 8-7129] Port full in module tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCAN_OUT in module scan_chain_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_clk_en in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port serdes_ce in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUT_BOT in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_empty in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2324.980 ; gain = 575.844 ; free physical = 471 ; free virtual = 4608
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2327.949 ; gain = 578.812 ; free physical = 469 ; free virtual = 4605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2327.949 ; gain = 578.812 ; free physical = 469 ; free virtual = 4605
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2327.949 ; gain = 0.000 ; free physical = 473 ; free virtual = 4611
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_100M_clk'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_100M_clk'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk_pin' completely overrides clock 'sysclk'.
+New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
+Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_v3_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_v3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_v3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.719 ; gain = 0.000 ; free physical = 469 ; free virtual = 4606
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+lscpu: bad usage
+Try 'lscpu --help' for more information.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2437.754 ; gain = 0.000 ; free physical = 469 ; free virtual = 4606
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2437.754 ; gain = 688.617 ; free physical = 462 ; free virtual = 4615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2445.723 ; gain = 696.586 ; free physical = 462 ; free virtual = 4615
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2445.723 ; gain = 696.586 ; free physical = 460 ; free virtual = 4613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx'
+INFO: [Synth 8-802] inferred FSM for state register 'adc_state_reg' in module 'adc_control'
+INFO: [Synth 8-802] inferred FSM for state register 'scan_state_reg' in module 'scan_chain_control'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'top_v3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_v3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                            00000
+                 iSTATE4 |                             0001 |                            00001
+                 iSTATE3 |                             0010 |                            00010
+                 iSTATE2 |                             0011 |                            00011
+                iSTATE13 |                             0100 |                            00100
+                iSTATE12 |                             0101 |                            00101
+                 iSTATE9 |                             0110 |                            00110
+                 iSTATE8 |                             0111 |                            00111
+                iSTATE11 |                             1000 |                            01000
+                iSTATE10 |                             1001 |                            01001
+                 iSTATE7 |                             1010 |                            01010
+                 iSTATE5 |                             1011 |                            01011
+                 iSTATE1 |                             1100 |                            01100
+                 iSTATE0 |                             1101 |                            01101
+                  iSTATE |                             1110 |                            01110
+                iSTATE14 |                             1111 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'adc_state_reg' using encoding 'sequential' in module 'adc_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+                    FALL |                               01 |                             0010
+                    RISE |                               10 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scan_state_reg' using encoding 'sequential' in module 'scan_chain_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'one-hot' in module 'top_v3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                   SHIFT |                              001 |                             0011
+              MARGIN_SET |                              010 |                             0101
+                    DONE |                              011 |                             0100
+                   DELAY |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_v3'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2445.723 ; gain = 696.586 ; free physical = 473 ; free virtual = 4602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 3     
++---Registers : 
+	               88 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 38    
++---Muxes : 
+	   5 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	  16 Input   16 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 2     
+	  16 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 48    
+	   4 Input    1 Bit        Muxes := 13    
+	  16 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 24    
+	  10 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top_v3 has port PWR_EN driven by constant 1
+WARNING: [Synth 8-3917] design top_v3 has port TEST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROLL_SEL driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROLL_CLK driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ADC_TEST_EN driven by constant 1
+WARNING: [Synth 8-3917] design top_v3 has port EXT_ADC_CONV driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port COL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port VLN_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port SHS_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port SHR_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_COL_ADDR[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port CLAMP_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port EXT_ADC_CONV_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port SPI_CLK_ADC_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_RST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ROW_SEL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v3 has port ADDR_LATCH driven by constant 0
+WARNING: [Synth 8-7129] Port SCAN_OUT in module top_v3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUT_BOT in module top_v3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v3 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2445.723 ; gain = 696.586 ; free physical = 425 ; free virtual = 4568
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2507.723 ; gain = 758.586 ; free physical = 380 ; free virtual = 4501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2536.770 ; gain = 787.633 ; free physical = 354 ; free virtual = 4475
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2537.777 ; gain = 788.641 ; free physical = 360 ; free virtual = 4474
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 166 ; free virtual = 4288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 166 ; free virtual = 4288
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 158 ; free virtual = 4287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 158 ; free virtual = 4287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 158 ; free virtual = 4287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 158 ; free virtual = 4287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name        | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_v3      | rst_pipe_reg[3] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-----------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |tx_fifo       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |clk_wiz |     1|
+|2     |tx_fifo |     1|
+|3     |CARRY4  |     8|
+|4     |LUT1    |     9|
+|5     |LUT2    |    28|
+|6     |LUT3    |    52|
+|7     |LUT4    |    36|
+|8     |LUT5    |    38|
+|9     |LUT6    |    85|
+|10    |SRL16E  |     1|
+|11    |FDCE    |    47|
+|12    |FDPE    |     1|
+|13    |FDRE    |   197|
+|14    |FDSE    |     4|
+|15    |IBUF    |     3|
+|16    |OBUF    |    43|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2705.590 ; gain = 956.453 ; free physical = 158 ; free virtual = 4288
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2705.590 ; gain = 846.648 ; free physical = 167 ; free virtual = 4296
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2705.598 ; gain = 956.453 ; free physical = 167 ; free virtual = 4297
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2705.598 ; gain = 0.000 ; free physical = 176 ; free virtual = 4297
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.617 ; gain = 0.000 ; free physical = 345 ; free virtual = 4474
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+lscpu: bad usage
+Try 'lscpu --help' for more information.
+Synth Design complete | Checksum: f10d1f01
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 76 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2785.629 ; gain = 0.000 ; free physical = 339 ; free virtual = 4469
+INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1/top_v3.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_v3_utilization_synth.rpt -pb top_v3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 23 18:51:18 2026...

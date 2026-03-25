@@ -1,0 +1,116 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Mar 23 17:28:28 2026
+| Host         : rocco running 64-bit Ubuntu 24.04.4 LTS
+| Command      : report_control_sets -verbose -file top_v3_control_sets_placed.rpt
+| Design       : top_v3
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    38 |
+|    Minimum number of control sets                        |    38 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   147 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    38 |
+| >= 0 to < 4        |    12 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    12 |
+| >= 10 to < 12      |     3 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |           10 |
+| No           | No                    | Yes                    |              15 |            8 |
+| No           | Yes                   | No                     |              44 |           18 |
+| Yes          | No                    | No                     |              69 |           19 |
+| Yes          | No                    | Yes                    |              33 |           11 |
+| Yes          | Yes                   | No                     |             153 |           56 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+---------------------------------------------------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|        Clock Signal       |                                        Enable Signal                                        |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+---------------------------------------------------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  u_100M_clk/inst/clk_out1 | u_adc/ADC_CLK_i_1_n_0                                                                       | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | u_adc/ADC_ENC_i_1_n_0                                                                       | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | u_adc/DATA_LOAD_i_1_n_0                                                                     | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | DAC_CS1_out                                                                                 | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | scan_chain_controller/SCAN_CLK_i_1_n_0                                                      | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | scan_chain_controller/SCAN_SEL_i_1_n_0                                                      | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | DAC_SDI_i_1_n_0                                                                             | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | u_tx/tx_reg_i_1_n_0                                                                         | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | scan_chain_controller/SCAN_IN_i_1_n_0                                                       | reset                                        |                1 |              1 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | scan_chain_controller/SCAN_RSTB9_out                                                        |                                              |                1 |              1 |         1.00 |
+|  sysclk_IBUF              |                                                                                             |                                              |                2 |              2 |         1.00 |
+|  u_100M_clk/inst/clk_out1 | u_adc/ADC_SH_i_1_n_0                                                                        | reset                                        |                1 |              2 |         2.00 |
+|  u_100M_clk/inst/clk_out1 |                                                                                             | u_rx/rst_pipe_reg[3]                         |                3 |              4 |         1.33 |
+|  u_100M_clk/inst/clk_out1 | u_baud_match/r_reg_reg[2]_0[0]                                                              | reset                                        |                1 |              4 |         4.00 |
+|  u_100M_clk/inst/clk_out1 | u_baud_match/E[0]                                                                           | reset                                        |                2 |              4 |         2.00 |
+|  u_100M_clk/inst/clk_out1 | bit_cnt[4]_i_1_n_0                                                                          | reset                                        |                2 |              5 |         2.50 |
+|  u_100M_clk/inst/clk_out1 | cmd_index[4]_i_1_n_0                                                                        | reset                                        |                2 |              5 |         2.50 |
+|  u_100M_clk/inst/clk_out1 | u_tx/shift_out_reg[7]_i_1_n_0                                                               | reset                                        |                1 |              8 |         8.00 |
+|  u_100M_clk/inst/clk_out1 | u_adc/DATA_SCLK_OBUF                                                                        | reset                                        |                7 |              8 |         1.14 |
+|  u_100M_clk/inst/clk_out1 | u_rx/wr_en_reg_reg_3[1]                                                                     | reset                                        |                3 |              8 |         2.67 |
+|  u_100M_clk/inst/clk_out1 | scan_chain_controller/scan_bit_cnt_0[0]                                                     | reset                                        |                2 |              8 |         4.00 |
+|  u_100M_clk/inst/clk_out1 | u_rx/shift_out_next[0]                                                                      | reset                                        |                3 |              8 |         2.67 |
+|  u_100M_clk/inst/clk_out1 | u_adc/tx_data_in[7]_i_1_n_0                                                                 | reset                                        |                6 |              8 |         1.33 |
+|  u_100M_clk/inst/clk_out1 | u_rx/wr_en_reg_reg_3[0]                                                                     | reset                                        |                2 |              8 |         4.00 |
+|  u_100M_clk/inst/clk_out1 | u_rx/rx_code_reg[16]_0[0]                                                                   |                                              |                2 |              8 |         4.00 |
+|  u_100M_clk/inst/clk_out1 | u_rx/wr_en_next                                                                             | reset                                        |                3 |              8 |         2.67 |
+|  u_100M_clk/inst/clk_out1 |                                                                                             | scan_chain_controller/scan_ce_cnt[0]_i_1_n_0 |                2 |              8 |         4.00 |
+|  u_100M_clk/inst/clk_out1 | scan_chain_controller/scan_chain[85]_i_1_n_0                                                | reset                                        |                4 |              9 |         2.25 |
+|  u_100M_clk/inst/clk_out1 |                                                                                             | spi_div[8]_i_1_n_0                           |                2 |              9 |         4.50 |
+|  u_100M_clk/inst/clk_out1 |                                                                                             |                                              |                8 |             10 |         1.25 |
+|  u_100M_clk/inst/clk_out1 | u_rx/rx_code_reg[18]_0[0]                                                                   |                                              |                3 |             10 |         3.33 |
+|  u_100M_clk/inst/clk_out1 | u_rx/rx_code_reg[18][0]                                                                     |                                              |                2 |             10 |         5.00 |
+|  u_100M_clk/inst/clk_out1 | u_adc/tx_cnt[15]_i_1_n_0                                                                    | reset                                        |                3 |             16 |         5.33 |
+|  u_100M_clk/inst/clk_out1 | u_rx/E[0]                                                                                   |                                              |                4 |             16 |         4.00 |
+|  u_100M_clk/inst/clk_out1 | shift_reg[24]_i_1_n_0                                                                       |                                              |                7 |             24 |         3.43 |
+|  u_100M_clk/inst/clk_out1 | u_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_rd_en | reset                                        |                7 |             34 |         4.86 |
+|  u_100M_clk/inst/clk_out1 | u_tx_fifo/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/E[0]      | reset                                        |                9 |             34 |         3.78 |
+|  u_100M_clk/inst/clk_out1 |                                                                                             | reset                                        |               19 |             38 |         2.00 |
++---------------------------+---------------------------------------------------------------------------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+

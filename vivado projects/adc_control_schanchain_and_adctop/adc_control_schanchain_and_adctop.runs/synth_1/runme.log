@@ -1,0 +1,549 @@
+
+*** Running vivado
+    with args -log top_v4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_v4.tcl
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Mon Mar 23 14:26:47 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_v4.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/utils_1/imports/synth_1/top_v3.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/utils_1/imports/synth_1/top_v3.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_v4 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 624310
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2230.586 ; gain = 484.125 ; free physical = 180 ; free virtual = 2982
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-9339] data object 'clk_100M' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:91]
+INFO: [Synth 8-6826] previous declaration of 'clk_100M' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:73]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'clk_100M' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:91]
+CRITICAL WARNING: [Synth 8-9339] data object 'clk_locked' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:92]
+INFO: [Synth 8-6826] previous declaration of 'clk_locked' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:74]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'clk_locked' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:92]
+CRITICAL WARNING: [Synth 8-9339] data object 'btn0_db' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:115]
+INFO: [Synth 8-6826] previous declaration of 'btn0_db' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:80]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'btn0_db' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:115]
+CRITICAL WARNING: [Synth 8-9339] data object 'btn1_db' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:115]
+INFO: [Synth 8-6826] previous declaration of 'btn1_db' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:80]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'btn1_db' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:115]
+CRITICAL WARNING: [Synth 8-9339] data object 'btn0_pulse' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:116]
+INFO: [Synth 8-6826] previous declaration of 'btn0_pulse' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:77]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'btn0_pulse' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:116]
+CRITICAL WARNING: [Synth 8-9339] data object 'btn1_pulse' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:116]
+INFO: [Synth 8-6826] previous declaration of 'btn1_pulse' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:77]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'btn1_pulse' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:116]
+CRITICAL WARNING: [Synth 8-9339] data object 'btn0_db_d' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:117]
+INFO: [Synth 8-6826] previous declaration of 'btn0_db_d' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:81]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'btn0_db_d' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:117]
+CRITICAL WARNING: [Synth 8-9339] data object 'btn1_db_d' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:117]
+INFO: [Synth 8-6826] previous declaration of 'btn1_db_d' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:81]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'btn1_db_d' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:117]
+CRITICAL WARNING: [Synth 8-9339] data object 'reset' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:140]
+INFO: [Synth 8-6826] previous declaration of 'reset' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:75]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'reset' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:140]
+CRITICAL WARNING: [Synth 8-9339] data object 'clk_300M' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:145]
+INFO: [Synth 8-6826] previous declaration of 'clk_300M' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:71]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'clk_300M' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:145]
+CRITICAL WARNING: [Synth 8-9339] data object 'reset' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:159]
+INFO: [Synth 8-6826] previous declaration of 'reset' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:75]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'reset' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:159]
+CRITICAL WARNING: [Synth 8-9339] data object 'rx_code' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:198]
+INFO: [Synth 8-6826] previous declaration of 'rx_code' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:185]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'rx_code' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:198]
+INFO: [Synth 8-6157] synthesizing module 'top_v4' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_base' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/.Xil/Vivado-624243-rocco/realtime/clk_wiz_base_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_base' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/.Xil/Vivado-624243-rocco/realtime/clk_wiz_base_stub.v:6]
+WARNING: [Synth 8-7071] port 'reset' of module 'clk_wiz_base' is unconnected for instance 'base' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:94]
+WARNING: [Synth 8-7071] port 'power_down' of module 'clk_wiz_base' is unconnected for instance 'base' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:94]
+WARNING: [Synth 8-7023] instance 'base' of module 'clk_wiz_base' has 5 connections declared, but only 3 given [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:94]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_selector' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_selector.v:25]
+INFO: [Synth 8-6157] synthesizing module 'clk_reconfig' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:20]
+	Parameter DEFAULT_DIVIDE bound to: 5 - type: integer 
+	Parameter DEFAULT_MULTIPLY bound to: 8 - type: integer 
+	Parameter DEFAULT_DIVCLK bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_dyn' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/.Xil/Vivado-624243-rocco/realtime/clk_wiz_dyn_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_dyn' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/.Xil/Vivado-624243-rocco/realtime/clk_wiz_dyn_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:211]
+INFO: [Synth 8-6155] done synthesizing module 'clk_reconfig' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'clk_selector' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_selector.v:25]
+INFO: [Synth 8-6157] synthesizing module 'rx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/rx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/rx.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:227]
+INFO: [Synth 8-6157] synthesizing module 'adc_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/adc_control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adc_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/adc_control.v:3]
+WARNING: [Synth 8-7071] port 'serdes_ce' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:342]
+WARNING: [Synth 8-7071] port 'tx_empty' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:342]
+WARNING: [Synth 8-7023] instance 'u_adc' of module 'adc_control' has 20 connections declared, but only 18 given [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:342]
+INFO: [Synth 8-6157] synthesizing module 'scan_chain_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/new/scan_chain_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scan_chain_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/new/scan_chain_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tx_fifo' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/.Xil/Vivado-624243-rocco/realtime/tx_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tx_fifo' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/.Xil/Vivado-624243-rocco/realtime/tx_fifo_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:411]
+INFO: [Synth 8-6157] synthesizing module 'baud_match' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/baud_match.v:4]
+	Parameter M bound to: 4 - type: integer 
+WARNING: [Synth 8-6104] Input port 'baud_clk' has an internal driver [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/baud_match.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'baud_match' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/baud_match.v:4]
+INFO: [Synth 8-6157] synthesizing module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/tx.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'tx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/tx.v:4]
+WARNING: [Synth 8-689] width (4) of port connection 'tx_state' does not match port width (2) of module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:434]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:554]
+WARNING: [Synth 8-6104] Input port 'EXT_ADC_DATA' has an internal driver [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:675]
+INFO: [Synth 8-6155] done synthesizing module 'top_v4' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:3]
+WARNING: [Synth 8-7137] Register m_axil_awaddr_reg in module clk_reconfig has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:74]
+WARNING: [Synth 8-7137] Register m_axil_wdata_reg in module clk_reconfig has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:78]
+WARNING: [Synth 8-7137] Register wr_addr_reg in module clk_reconfig has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:223]
+WARNING: [Synth 8-7137] Register wr_data_reg in module clk_reconfig has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:224]
+WARNING: [Synth 8-7137] Register m_axil_araddr_reg in module clk_reconfig has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v:87]
+WARNING: [Synth 8-6014] Unused sequential element dout_top_sync0_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/adc_control.v:43]
+WARNING: [Synth 8-6014] Unused sequential element dout_top_sync1_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/adc_control.v:44]
+WARNING: [Synth 8-6014] Unused sequential element serdes_cnt_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/adc_control.v:69]
+WARNING: [Synth 8-6014] Unused sequential element cnt_read_reg_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/tx.v:47]
+WARNING: [Synth 8-6014] Unused sequential element por_cnt_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:106]
+WARNING: [Synth 8-6014] Unused sequential element btn0_db_d_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:132]
+WARNING: [Synth 8-3848] Net reset in module/entity top_v4 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:75]
+WARNING: [Synth 8-3848] Net baud_tick in module/entity top_v4 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:165]
+WARNING: [Synth 8-3848] Net rx_full in module/entity top_v4 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sources_1/imports/new/top_v3.v:169]
+WARNING: [Synth 8-3917] design top_v4 has port PWR_EN driven by constant 1
+WARNING: [Synth 8-3917] design top_v4 has port TEST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROLL_SEL driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROLL_CLK driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port EXT_ADC_CONV driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port COL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port VLN_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port SHS_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port SHR_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port CLAMP_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port EXT_ADC_CONV_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port SPI_CLK_ADC_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_RST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_SEL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ADDR_LATCH driven by constant 0
+WARNING: [Synth 8-7129] Port full in module tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCAN_OUT in module scan_chain_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_clk_en in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port serdes_ce in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUT_BOT in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_empty in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2327.523 ; gain = 581.062 ; free physical = 158 ; free virtual = 2885
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.398 ; gain = 592.938 ; free physical = 144 ; free virtual = 2880
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2339.398 ; gain = 592.938 ; free physical = 146 ; free virtual = 2883
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2339.398 ; gain = 0.000 ; free physical = 164 ; free virtual = 2883
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base/clk_wiz_base_in_context.xdc] for cell 'base'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base/clk_wiz_base_in_context.xdc] for cell 'base'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_dyn/clk_wiz_dyn/clk_wiz_dyn_in_context.xdc] for cell 'u_clk_sel/u_clk_reconfig/u_clk_wiz'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_dyn/clk_wiz_dyn/clk_wiz_dyn_in_context.xdc] for cell 'u_clk_sel/u_clk_reconfig/u_clk_wiz'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk_pin' completely overrides clock 'sysclk'.
+New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
+Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base/clk_wiz_base_in_context.xdc:1]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_v4_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_v4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_v4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2448.137 ; gain = 0.000 ; free physical = 186 ; free virtual = 2866
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+lscpu: bad usage
+Try 'lscpu --help' for more information.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2448.172 ; gain = 0.000 ; free physical = 184 ; free virtual = 2865
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'u_tx_fifo' at clock pin 'clk' is different from the actual clock period '6.250', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2448.172 ; gain = 701.711 ; free physical = 302 ; free virtual = 2833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2456.141 ; gain = 709.680 ; free physical = 302 ; free virtual = 2833
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2456.141 ; gain = 709.680 ; free physical = 297 ; free virtual = 2828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'clk_reconfig'
+INFO: [Synth 8-802] inferred FSM for state register 'rc_state_reg' in module 'clk_reconfig'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'clk_selector'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx'
+INFO: [Synth 8-802] inferred FSM for state register 'adc_state_reg' in module 'adc_control'
+INFO: [Synth 8-802] inferred FSM for state register 'scan_state_reg' in module 'scan_chain_control'
+INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'top_v4'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_v4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WR_IDLE |                               00 |                               00
+                 WR_ADDR |                               01 |                               01
+                 WR_DATA |                               10 |                               10
+                 WR_RESP |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'clk_reconfig'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RC_IDLE |                             0000 |                             0000
+               RC_WR_DIV |                             0001 |                             0001
+              RC_WR_MULT |                             0010 |                             0010
+            RC_WR_DIVCLK |                             0011 |                             0011
+              RC_WR_LOAD |                             0100 |                             0100
+               RC_WR_SEN |                             0101 |                             0101
+          RC_WAIT_UNLOCK |                             0110 |                             0110
+            RC_POLL_LOCK |                             0111 |                             0111
+              RC_RD_WAIT |                             1000 |                             1000
+           RC_CHECK_LOCK |                             1001 |                             1001
+                 RC_DONE |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rc_state_reg' using encoding 'sequential' in module 'clk_reconfig'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0001 |                               00
+                  S_LOAD |                             0010 |                               01
+                  S_FIRE |                             0100 |                               10
+                  S_WAIT |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'clk_selector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   start |                               01 |                               01
+                    data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE6 |                             0000 |                            00000
+                 iSTATE4 |                             0001 |                            00001
+                 iSTATE3 |                             0010 |                            00010
+                 iSTATE2 |                             0011 |                            00011
+                iSTATE13 |                             0100 |                            00100
+                iSTATE12 |                             0101 |                            00101
+                 iSTATE9 |                             0110 |                            00110
+                 iSTATE8 |                             0111 |                            00111
+                iSTATE11 |                             1000 |                            01000
+                iSTATE10 |                             1001 |                            01001
+                 iSTATE7 |                             1010 |                            01010
+                 iSTATE5 |                             1011 |                            01011
+                 iSTATE1 |                             1100 |                            01100
+                 iSTATE0 |                             1101 |                            01101
+                  iSTATE |                             1110 |                            01110
+                iSTATE14 |                             1111 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'adc_state_reg' using encoding 'sequential' in module 'adc_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+                    FALL |                               01 |                             0010
+                    RISE |                               10 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'scan_state_reg' using encoding 'sequential' in module 'scan_chain_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               00
+                 iSTATE0 |                              010 |                               01
+                 iSTATE1 |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encoding 'one-hot' in module 'top_v4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                             0000
+                   SHIFT |                              001 |                             0011
+              MARGIN_SET |                              010 |                             0101
+                    DONE |                              011 |                             0100
+                   DELAY |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_v4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2456.141 ; gain = 709.680 ; free physical = 285 ; free virtual = 2822
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               88 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               25 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 15    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 46    
++---Muxes : 
+	  11 Input   32 Bit        Muxes := 1     
+	   5 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   24 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	  16 Input   16 Bit        Muxes := 1     
+	  11 Input   11 Bit        Muxes := 2     
+	  12 Input    8 Bit        Muxes := 3     
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   5 Input    5 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   4 Input    4 Bit        Muxes := 3     
+	  16 Input    4 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 6     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 24    
+	  11 Input    1 Bit        Muxes := 8     
+	   2 Input    1 Bit        Muxes := 48    
+	  16 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 24    
+	  10 Input    1 Bit        Muxes := 9     
+	   5 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top_v4 has port PWR_EN driven by constant 1
+WARNING: [Synth 8-3917] design top_v4 has port TEST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROLL_SEL driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROLL_CLK driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port EXT_ADC_CONV driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port COL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port VLN_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port SHS_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port SHR_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[7] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[6] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[5] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[4] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[3] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[2] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[1] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_COL_ADDR[0] driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port CLAMP_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port EXT_ADC_CONV_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port SPI_CLK_ADC_2 driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_RST_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ROW_SEL_EN driven by constant 0
+WARNING: [Synth 8-3917] design top_v4 has port ADDR_LATCH driven by constant 0
+WARNING: [Synth 8-7129] Port full in module tx is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCAN_OUT in module scan_chain_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port base_clk_en in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port serdes_ce in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DOUT_BOT in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_empty in module adc_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2456.141 ; gain = 709.680 ; free physical = 289 ; free virtual = 2786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2510.141 ; gain = 763.680 ; free physical = 237 ; free virtual = 2703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 2540.188 ; gain = 793.727 ; free physical = 192 ; free virtual = 2660
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2541.195 ; gain = 794.734 ; free physical = 194 ; free virtual = 2662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module base has unconnected pin reset
+CRITICAL WARNING: [Synth 8-4442] BlackBox module base has unconnected pin power_down
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 162 ; free virtual = 2525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 162 ; free virtual = 2525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 161 ; free virtual = 2524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 152 ; free virtual = 2522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 160 ; free virtual = 2522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 160 ; free virtual = 2522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_base  |         1|
+|2     |tx_fifo       |         1|
+|3     |clk_wiz_dyn   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_wiz_base |     1|
+|2     |clk_wiz_dyn  |     1|
+|3     |tx_fifo      |     1|
+|4     |CARRY4       |    13|
+|5     |LUT1         |    10|
+|6     |LUT2         |    29|
+|7     |LUT3         |    43|
+|8     |LUT4         |    61|
+|9     |LUT5         |    63|
+|10    |LUT6         |    98|
+|11    |FDRE         |   356|
+|12    |IBUF         |     3|
+|13    |OBUF         |    43|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.008 ; gain = 960.547 ; free physical = 160 ; free virtual = 2522
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.008 ; gain = 851.773 ; free physical = 158 ; free virtual = 2521
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2707.016 ; gain = 960.547 ; free physical = 158 ; free virtual = 2521
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2707.016 ; gain = 0.000 ; free physical = 151 ; free virtual = 2513
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2763.035 ; gain = 0.000 ; free physical = 314 ; free virtual = 2677
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+lscpu: bad usage
+Try 'lscpu --help' for more information.
+Synth Design complete | Checksum: a24d4138
+INFO: [Common 17-83] Releasing license: Synthesis
+76 Infos, 89 Warnings, 27 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2787.047 ; gain = 0.000 ; free physical = 313 ; free virtual = 2676
+INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/synth_1/top_v4.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_v4_utilization_synth.rpt -pb top_v4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 23 14:27:24 2026...

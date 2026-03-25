@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "fifo_generator_v13_2_14" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "top_v4_behav" "xil_defaultlib.top_v4" "xil_defaultlib.glbl" -log "elaborate.log" 

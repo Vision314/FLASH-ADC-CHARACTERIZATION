@@ -1,0 +1,1038 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Mar 23 12:10:50 2026
+# Process ID         : 579717
+# Current directory  : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1
+# Command line       : vivado -log top_v3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_v3.tcl -notrace
+# Log file           : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3.vdi
+# Journal file       : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/vivado.jou
+# Running On         : rocco
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 3254.193 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8058 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 12353 MB
+# Available Virtual  : 2786 MB
+#-----------------------------------------------------------
+source top_v3.tcl -notrace
+Command: link_design -top top_v3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.dcp' for cell 'base'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.dcp' for cell 'u_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.dcp' for cell 'nolabel_line88/fs_10M'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.dcp' for cell 'nolabel_line88/fs_500k'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.dcp' for cell 'nolabel_line88/fs_7M'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.dcp' for cell 'nolabel_line88/fs_9M'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1782.656 ; gain = 0.000 ; free physical = 394 ; free virtual = 2082
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_10M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_500k/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_7M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_9M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_10M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_500k/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_7M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_9M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.xdc] for cell 'u_tx_fifo/U0'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.xdc] for cell 'u_tx_fifo/U0'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base_board.xdc] for cell 'base/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base_board.xdc] for cell 'base/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc] for cell 'base/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc] for cell 'base/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M_board.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M_board.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc] for cell 'nolabel_line88/fs_9M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M_board.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M_board.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc] for cell 'nolabel_line88/fs_7M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k_board.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k_board.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc] for cell 'nolabel_line88/fs_500k/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M_board.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M_board.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc] for cell 'nolabel_line88/fs_10M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+CRITICAL WARNING: [Constraints 18-1055] Clock 'sys_clk_pin' completely overrides clock 'sysclk', which is referenced by one or more other constraints. Any constraints that refer to the overridden clock will be ignored.
+New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
+Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:53]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2476.996 ; gain = 0.000 ; free physical = 200 ; free virtual = 1530
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 11 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.43 . Memory (MB): peak = 2503.082 ; gain = 26.051 ; free physical = 142 ; free virtual = 1480
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2535.895 ; gain = 32.812 ; free physical = 142 ; free virtual = 1480
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 142 ; free virtual = 1122
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 142 ; free virtual = 1122
+Phase 1 Initialization | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 142 ; free virtual = 1122
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 142 ; free virtual = 1122
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 139 ; free virtual = 1122
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 139 ; free virtual = 1122
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.67 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 139 ; free virtual = 1122
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 236a3fa6a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.73 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 137 ; free virtual = 1124
+Retarget | Checksum: 236a3fa6a
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Retarget, 3 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 236a3fa6a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 136 ; free virtual = 1125
+Constant propagation | Checksum: 236a3fa6a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 136 ; free virtual = 1125
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 135 ; free virtual = 1125
+Phase 5 Sweep | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.76 . Memory (MB): peak = 2889.707 ; gain = 0.000 ; free physical = 135 ; free virtual = 1125
+Sweep | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Sweep, 10 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 134 ; free virtual = 1124
+BUFG optimization | Checksum: 26340e38a
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 134 ; free virtual = 1124
+Shift Register Optimization | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.79 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 134 ; free virtual = 1124
+Post Processing Netlist | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 133 ; free virtual = 1124
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2921.723 ; gain = 0.000 ; free physical = 133 ; free virtual = 1124
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 133 ; free virtual = 1124
+Phase 9 Finalization | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 133 ; free virtual = 1124
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              3  |
+|  Constant propagation         |               0  |               0  |                                              2  |
+|  Sweep                        |               0  |               1  |                                             10  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              2  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2921.723 ; gain = 32.016 ; free physical = 133 ; free virtual = 1124
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 16 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 48 newly gated: 0 Total Ports: 64
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 216fa6021
+
+Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 122 ; free virtual = 1077
+Ending Power Optimization Task | Checksum: 216fa6021
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3089.773 ; gain = 168.051 ; free physical = 122 ; free virtual = 1077
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 2163f80d3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.73 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 125 ; free virtual = 1067
+Ending Final Cleanup Task | Checksum: 2163f80d3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 125 ; free virtual = 1067
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 125 ; free virtual = 1067
+INFO: [Common 17-83] Releasing license: Implementation
+53 Infos, 11 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.statsThreshold
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_v3_drc_opted.rpt -pb top_v3_drc_opted.pb -rpx top_v3_drc_opted.rpx
+Command: report_drc -file top_v3_drc_opted.rpt -pb top_v3_drc_opted.pb -rpx top_v3_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 147 ; free virtual = 1073
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 147 ; free virtual = 1073
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 147 ; free virtual = 1073
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 145 ; free virtual = 1073
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 145 ; free virtual = 1073
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 145 ; free virtual = 1073
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 144 ; free virtual = 1073
+Write Physdb Complete: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 144 ; free virtual = 1073
+INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 123 ; free virtual = 1077
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 18102d43a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 123 ; free virtual = 1077
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3089.773 ; gain = 0.000 ; free physical = 122 ; free virtual = 1076
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Mar 23 12:31:49 2026
+# Process ID         : 581910
+# Current directory  : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1
+# Command line       : vivado -log top_v3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_v3.tcl -notrace
+# Log file           : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3.vdi
+# Journal file       : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/vivado.jou
+# Running On         : rocco
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 3400.000 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8058 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 12353 MB
+# Available Virtual  : 1309 MB
+#-----------------------------------------------------------
+source top_v3.tcl -notrace
+Command: link_design -top top_v3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Mar 23 12:34:50 2026
+# Process ID         : 586094
+# Current directory  : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1
+# Command line       : vivado -log top_v3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_v3.tcl -notrace
+# Log file           : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3.vdi
+# Journal file       : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/vivado.jou
+# Running On         : rocco
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 3287.149 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8058 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 12353 MB
+# Available Virtual  : 8213 MB
+#-----------------------------------------------------------
+source top_v3.tcl -notrace
+Command: link_design -top top_v3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.dcp' for cell 'base'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.dcp' for cell 'u_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.dcp' for cell 'nolabel_line88/fs_10M'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.dcp' for cell 'nolabel_line88/fs_500k'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.dcp' for cell 'nolabel_line88/fs_7M'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.dcp' for cell 'nolabel_line88/fs_9M'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1779.578 ; gain = 0.000 ; free physical = 165 ; free virtual = 7207
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_10M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_500k/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_7M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_9M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_10M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_500k/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_7M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_9M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.xdc] for cell 'u_tx_fifo/U0'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.xdc] for cell 'u_tx_fifo/U0'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base_board.xdc] for cell 'base/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base_board.xdc] for cell 'base/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc] for cell 'base/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc] for cell 'base/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M_board.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M_board.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc] for cell 'nolabel_line88/fs_9M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M_board.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M_board.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc] for cell 'nolabel_line88/fs_7M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k_board.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k_board.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc] for cell 'nolabel_line88/fs_500k/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M_board.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M_board.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc] for cell 'nolabel_line88/fs_10M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+CRITICAL WARNING: [Constraints 18-1055] Clock 'sys_clk_pin' completely overrides clock 'sysclk', which is referenced by one or more other constraints. Any constraints that refer to the overridden clock will be ignored.
+New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
+Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:53]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2479.824 ; gain = 0.000 ; free physical = 131 ; free virtual = 6738
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 11 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2479.859 ; gain = 860.344 ; free physical = 131 ; free virtual = 6737
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2501.699 ; gain = 21.840 ; free physical = 186 ; free virtual = 6700
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2532.512 ; gain = 30.812 ; free physical = 184 ; free virtual = 6699
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 184 ; free virtual = 6335
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 200 ; free virtual = 6337
+Phase 1 Initialization | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 204 ; free virtual = 6337
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 210 ; free virtual = 6338
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6345
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6345
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.56 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6345
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 236a3fa6a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.58 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6346
+Retarget | Checksum: 236a3fa6a
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Retarget, 3 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 236a3fa6a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.59 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6345
+Constant propagation | Checksum: 236a3fa6a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6345
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 240 ; free virtual = 6346
+Phase 5 Sweep | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.61 . Memory (MB): peak = 2890.324 ; gain = 0.000 ; free physical = 239 ; free virtual = 6345
+Sweep | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Sweep, 10 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.62 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+BUFG optimization | Checksum: 26340e38a
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.62 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+Shift Register Optimization | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.62 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+Post Processing Netlist | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.64 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2922.340 ; gain = 0.000 ; free physical = 239 ; free virtual = 6345
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.64 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+Phase 9 Finalization | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.64 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              3  |
+|  Constant propagation         |               0  |               0  |                                              2  |
+|  Sweep                        |               0  |               1  |                                             10  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              2  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.64 . Memory (MB): peak = 2922.340 ; gain = 32.016 ; free physical = 239 ; free virtual = 6345
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 16 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 48 newly gated: 0 Total Ports: 64
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 216fa6021
+
+Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 178 ; free virtual = 6290
+Ending Power Optimization Task | Checksum: 216fa6021
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3090.391 ; gain = 168.051 ; free physical = 178 ; free virtual = 6290
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 2163f80d3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.73 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 162 ; free virtual = 6276
+Ending Final Cleanup Task | Checksum: 2163f80d3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 162 ; free virtual = 6276
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 162 ; free virtual = 6276
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 11 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 3090.391 ; gain = 610.531 ; free physical = 162 ; free virtual = 6276
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_v3_drc_opted.rpt -pb top_v3_drc_opted.pb -rpx top_v3_drc_opted.rpx
+Command: report_drc -file top_v3_drc_opted.rpt -pb top_v3_drc_opted.pb -rpx top_v3_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 153 ; free virtual = 6268
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 153 ; free virtual = 6268
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 153 ; free virtual = 6268
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 152 ; free virtual = 6267
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 152 ; free virtual = 6267
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 152 ; free virtual = 6267
+Wrote Device Cache: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 152 ; free virtual = 6268
+Write Physdb Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 152 ; free virtual = 6268
+INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 143 ; free virtual = 6261
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 18102d43a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 143 ; free virtual = 6261
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3090.391 ; gain = 0.000 ; free physical = 143 ; free virtual = 6261
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Mar 23 12:41:20 2026
+# Process ID         : 587459
+# Current directory  : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1
+# Command line       : vivado -log top_v3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_v3.tcl -notrace
+# Log file           : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3.vdi
+# Journal file       : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/vivado.jou
+# Running On         : rocco
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 3600.000 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8058 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 12353 MB
+# Available Virtual  : 7160 MB
+#-----------------------------------------------------------
+source top_v3.tcl -notrace
+Command: link_design -top top_v3 -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.dcp' for cell 'base'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.dcp' for cell 'u_tx_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.dcp' for cell 'nolabel_line88/fs_10M'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.dcp' for cell 'nolabel_line88/fs_500k'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.dcp' for cell 'nolabel_line88/fs_7M'
+INFO: [Project 1-454] Reading design checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.dcp' for cell 'nolabel_line88/fs_9M'
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1780.551 ; gain = 0.000 ; free physical = 218 ; free virtual = 6274
+INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_10M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_500k/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_7M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. nolabel_line88/fs_9M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_10M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_500k/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_7M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'nolabel_line88/fs_9M/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.xdc] for cell 'u_tx_fifo/U0'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/tx_fifo/tx_fifo.xdc] for cell 'u_tx_fifo/U0'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base_board.xdc] for cell 'base/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base_board.xdc] for cell 'base/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc] for cell 'base/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc] for cell 'base/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M_board.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M_board.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc] for cell 'nolabel_line88/fs_9M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_9M/clk_wiz_9M.xdc] for cell 'nolabel_line88/fs_9M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M_board.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M_board.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc] for cell 'nolabel_line88/fs_7M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_7M/clk_wiz_7M.xdc] for cell 'nolabel_line88/fs_7M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k_board.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k_board.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc] for cell 'nolabel_line88/fs_500k/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_500k/clk_wiz_500k.xdc] for cell 'nolabel_line88/fs_500k/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M_board.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M_board.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc] for cell 'nolabel_line88/fs_10M/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc:54]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_10M/clk_wiz_10M.xdc] for cell 'nolabel_line88/fs_10M/inst'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+CRITICAL WARNING: [Constraints 18-1055] Clock 'sys_clk_pin' completely overrides clock 'sysclk', which is referenced by one or more other constraints. Any constraints that refer to the overridden clock will be ignored.
+New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
+Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_base/clk_wiz_base.xdc:53]
+Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2488.828 ; gain = 0.000 ; free physical = 164 ; free virtual = 5762
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+20 Infos, 11 Warnings, 4 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2488.863 ; gain = 871.375 ; free physical = 163 ; free virtual = 5762
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors, 1 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.49 . Memory (MB): peak = 2500.945 ; gain = 12.082 ; free physical = 152 ; free virtual = 5710
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2532.758 ; gain = 31.812 ; free physical = 151 ; free virtual = 5710
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 131 ; free virtual = 5346
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 131 ; free virtual = 5346
+Phase 1 Initialization | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 131 ; free virtual = 5346
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 130 ; free virtual = 5346
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1b9e25d6d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.74 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 236a3fa6a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.77 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+Retarget | Checksum: 236a3fa6a
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Retarget, 3 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 236a3fa6a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.78 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+Constant propagation | Checksum: 236a3fa6a
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+Phase 5 Sweep | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.8 . Memory (MB): peak = 2888.570 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+Sweep | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Sweep, 10 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+BUFG optimization | Checksum: 26340e38a
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+Shift Register Optimization | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 26340e38a
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+Post Processing Netlist | Checksum: 26340e38a
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2920.586 ; gain = 0.000 ; free physical = 125 ; free virtual = 5341
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+Phase 9 Finalization | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              3  |
+|  Constant propagation         |               0  |               0  |                                              2  |
+|  Sweep                        |               0  |               1  |                                             10  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              2  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b51d29a6
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.85 . Memory (MB): peak = 2920.586 ; gain = 32.016 ; free physical = 125 ; free virtual = 5341
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 16 BRAM(s) out of a total of 32 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 48 newly gated: 0 Total Ports: 64
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 216fa6021
+
+Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.11 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 141 ; free virtual = 5286
+Ending Power Optimization Task | Checksum: 216fa6021
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3088.637 ; gain = 168.051 ; free physical = 141 ; free virtual = 5286
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 2163f80d3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:00.85 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 145 ; free virtual = 5289
+Ending Final Cleanup Task | Checksum: 2163f80d3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 145 ; free virtual = 5289
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 145 ; free virtual = 5289
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 11 Warnings, 4 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:09 . Memory (MB): peak = 3088.637 ; gain = 599.773 ; free physical = 145 ; free virtual = 5289
+INFO: [Vivado 12-24828] Executing command : report_drc -file top_v3_drc_opted.rpt -pb top_v3_drc_opted.pb -rpx top_v3_drc_opted.rpx
+Command: report_drc -file top_v3_drc_opted.rpt -pb top_v3_drc_opted.pb -rpx top_v3_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 147 ; free virtual = 5292
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 147 ; free virtual = 5292
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 147 ; free virtual = 5291
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 147 ; free virtual = 5291
+Wrote PlaceStorage: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 146 ; free virtual = 5291
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 146 ; free virtual = 5291
+Wrote Device Cache: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 146 ; free virtual = 5291
+Write Physdb Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 146 ; free virtual = 5291
+INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.runs/impl_1/top_v3_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 22 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 148 ; free virtual = 5293
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 18102d43a
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 148 ; free virtual = 5293
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3088.637 ; gain = 0.000 ; free physical = 148 ; free virtual = 5293
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device

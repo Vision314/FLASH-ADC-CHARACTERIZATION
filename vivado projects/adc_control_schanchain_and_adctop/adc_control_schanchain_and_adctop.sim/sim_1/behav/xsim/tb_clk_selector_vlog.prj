@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../../../../Xilinix/2025.2/data/rsb/busdef" --include "../../../../adc_control_schanchain_and_adctop.ip_user_files/ipstatic" \
+"../../../../adc_control_schanchain_and_adctop.gen/sources_1/ip/clk_wiz_dyn/clk_wiz_dyn_sim_netlist.v" \
+"../../../../adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_reconfig.v" \
+"../../../../adc_control_schanchain_and_adctop.srcs/sources_1/imports/Downloads/clk_selector.v" \
+"../../../../adc_control_schanchain_and_adctop.srcs/sim_1/imports/Downloads/tb_clk_selector.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

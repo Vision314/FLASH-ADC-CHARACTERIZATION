@@ -20,11 +20,30 @@ try:
 except ImportError:
     _PIL_OK = False
 
-CLK_GEN_F = 291.33333e6
+# Fs        |  Fclk_gen |   Fi
+
+# 500kHz    |   8e6     |   99.915 kHz  x
+# 1Mhz      |   16e6    |   99.976 kHz  x
+# 2Mhz      |   32e6    |   99.854 kHz  x
+# 3Mhz      |   48e6    |   99.976 kHz  x
+# 4Mhz      |   64e6    |   100.098 kHz
+
+# 5Mhz      |   80e6    |   99.487 kHz  x
+
+# 6Mhz      |   96e6    |   98.877 kHz
+# 7Mhz      |   112e6   |   99.976 kHz
+# 8Mhz      |   128e6   |   98.633 kHz
+# 9Mhz      |   144e6   |   99.976 kHz
+# 10Mhz     |   160e6   |   98.877 kHz
+
+
+
+CLK_GEN_F = 80e6
 BAUD_MATCH_MULT = 8
+FS = CLK_GEN_F / 16
 
 # ── Configuration ────────────────────────────────────────────────────────────
-PORT                 = '/dev/ttyUSB1'
+PORT                 = '/dev/ttyUSB2'
 BAUDRATE             = (CLK_GEN_F / 16) / BAUD_MATCH_MULT
 BUFFER_SIZE          = 4096
 RAMP_FALL_THRESHOLD  = 200    # minimum drop (0–255) to count as a sawtooth reset
@@ -323,17 +342,17 @@ class SerialGUI:
         ce_lim_list = list(range(1, 500))
         sample_rate_combo_options = [f"CE={ce}" for ce in ce_lim_list]
 
-        ttk.Label(parent, text="SAMPLING RATE",
+        ttk.Label(parent, text = f"SAMPLING RATE = {FS/1e6:.3g}M" if FS >= 1e6 else f"SAMPLING RATE = {FS/1e3:.3g}k" if FS >= 1e3 else f"SAMPLING RATE = {FS}",
                   background=CLR["panel"], foreground=CLR["muted"],
                   font=FONT_LABEL).pack(anchor="w", padx=14, pady=(4, 2))
 
-        self.sample_rate_var = tk.StringVar(value=sample_rate_combo_options[0])
-        sample_rate_combo = ttk.Combobox(parent,
-            textvariable=self.sample_rate_var,
-            values=sample_rate_combo_options,
-            state="readonly", width=20)
-        sample_rate_combo.pack(anchor="w", padx=14, pady=(0, 6))
-        sample_rate_combo.bind("<<ComboboxSelected>>", self.change_clock_speed)
+        # self.sample_rate_var = tk.StringVar(value=sample_rate_combo_options[0])
+        # sample_rate_combo = ttk.Combobox(parent,
+        #     textvariable=self.sample_rate_var,
+        #     values=sample_rate_combo_options,
+        #     state="readonly", width=20)
+        # sample_rate_combo.pack(anchor="w", padx=14, pady=(0, 6))
+        # sample_rate_combo.bind("<<ComboboxSelected>>", self.change_clock_speed)
 
         ttk.Separator(parent, orient="horizontal").pack(fill="x", padx=10, pady=8)
 

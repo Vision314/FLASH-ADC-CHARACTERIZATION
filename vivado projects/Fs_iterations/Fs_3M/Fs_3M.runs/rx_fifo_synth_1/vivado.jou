@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Mar 16 23:33:50 2026
+# Process ID         : 330372
+# Current directory  : /home/frankie/WCIS/WCIS-CMODA7-Control-Board/sw/root/fw/updated_adc_operation_and_dac_works_frankie/updated_adc_operation_and_dac_works_frankie.runs/rx_fifo_synth_1
+# Command line       : vivado -log rx_fifo.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rx_fifo.tcl
+# Log file           : /home/frankie/WCIS/WCIS-CMODA7-Control-Board/sw/root/fw/updated_adc_operation_and_dac_works_frankie/updated_adc_operation_and_dac_works_frankie.runs/rx_fifo_synth_1/rx_fifo.vds
+# Journal file       : /home/frankie/WCIS/WCIS-CMODA7-Control-Board/sw/root/fw/updated_adc_operation_and_dac_works_frankie/updated_adc_operation_and_dac_works_frankie.runs/rx_fifo_synth_1/vivado.jou
+# Running On         : rocco
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.4 LTS
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
+# CPU Frequency      : 970.653 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8058 MB
+# Swap memory        : 4294 MB
+# Total Virtual      : 12353 MB
+# Available Virtual  : 3092 MB
+#-----------------------------------------------------------
+source rx_fifo.tcl -notrace

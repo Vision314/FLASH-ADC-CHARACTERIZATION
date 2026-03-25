@@ -1,0 +1,69 @@
+3/23
+    1. Making new repo to organize things better
+
+    2. Let's first commit to a set of sampling rates and method of deteriming them
+        a. alright so i've confirmed that if you want to use clock dividers then your J value has to be set 
+            as powers of any odd number (3, 9, 81, ... or 5, 25, 125, ...)
+        b. unfortunatley that means that if you were to use simple clock dividers, you are limiting the 
+            amount of different sampling frequencies you can test because you need whole number clock dividers
+            in order to accuratley make your different sampled clocks
+        c. there are three solutions. 
+            i.   regenerate the bitstream for each different sampling frequency
+            ii.  us AXI4 protocol to change the speed of the clocking generator while the hardware is running
+                tried this too, but it is too complicated and i don't think i have the time to figure it out
+            iii. make separate clocking generators and then just select which one to use
+                a. im thinking of using this one, and i think i'll have to also make the input freuqnecy change
+                ... follow up. this did not work because you can only have like 5 clocking generators at a time
+            ... ok i tried option ii and iii and i unfortunatley think i have to ues option i and brute force my way
+                through this
+
+# we have a lot of different filepaths organized as the following
+    # high_power_mode
+        # 1.01MSps
+        # 3.03MSps
+        # 9.1MSps
+        # 337.12kSps
+    # low_power_mode
+        # 1.01MSps
+        # 3.03MSps
+        # 9.1MSps
+        # 337.12kSps
+    #regular_power_mode
+        # 1.01MSps
+        # 3.03MSps
+        # 9.1MSps
+        # 337.12kSps
+
+# sub folder named as a sampling rate has 5 csv files in them. each one is a different 8192 samples of a sine 
+# wave input collected from our ADC
+
+# we eventually want to get a graph that has the sampling rate on the x-axis and the calculated FOMw on the y-axis
+# and then there will be 3 different lines, one for each power mode, on the graph
+
+# in order to get ENOB and FOM
+
+    # define constants
+        # csv_filename format => bufXXXX_ceXXXX_hiXXXXV_loXXXXV_XPM_TX.csv
+            # BUFFER_SIZE = buf{number of samples in csv file}_
+            # CE = ce{divider}_
+            # REF_HI = hi{high reference voltage in volts}_
+            # REF_HI = lo{low reference voltage in volts}_
+            # POWER_MODE = {H, L, R}PM_
+            # TEST_NUM = T{test number}
+        # BASE_CLK_FREQ = 291.33333e6
+        # FI = 90e3
+
+        # FS = 1/(((CE+1)/BASE_CLK_FREQ)*16)
+        # J = (FI*BUFFER_SIZE)/FS
+        # fstep = FS / BUFFER_SIZE
+        # f = np.linspace(0, (BUFFER_SIZE-1)*fstep, BUFFER_SIZE)
+
+    # FOR each_power_mode
+        # FOR each_sampling_rate
+            # FOR each_csv_file
+                # calculate the FFT
+            # average the FFT's together to get one FFT plot
+            # calculate ENOB (and all other dynamic characteristics while your at it)
+            # save in a table as the following
+                # Power Mode | Sampling Rate | ENOB | SNR (dB) | SINAD (dB) | THD (dbFS) | SFDR | DR |
+    # plot frequency on X-axis and ENOB on y-axis

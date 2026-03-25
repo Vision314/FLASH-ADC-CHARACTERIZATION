@@ -1,0 +1,7 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sim_1/imports/Downloads/tb_clk_selector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_clk_selector
+ERROR: [VRFC 10-8885] declarations are not allowed in an unnamed block [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sim_1/imports/Downloads/tb_clk_selector.v:178]
+ERROR: [VRFC 10-8885] declarations are not allowed in an unnamed block [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sim_1/imports/Downloads/tb_clk_selector.v:213]
+ERROR: [VRFC 10-8530] module 'tb_clk_selector' is ignored due to previous errors [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sim_1/imports/Downloads/tb_clk_selector.v:22]
+INFO: [VRFC 10-311] analyzing module clk_wiz_dyn
+ERROR: [VRFC 10-8530] module 'clk_wiz_dyn' is ignored due to previous errors [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/adc_control_schanchain_and_adctop/adc_control_schanchain_and_adctop.srcs/sim_1/imports/Downloads/tb_clk_selector.v:289]
