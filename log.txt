@@ -14,8 +14,12 @@
             iii. make separate clocking generators and then just select which one to use
                 a. im thinking of using this one, and i think i'll have to also make the input freuqnecy change
                 ... follow up. this did not work because you can only have like 5 clocking generators at a time
-            ... ok i tried option ii and iii and i unfortunatley think i have to ues option i and brute force my way
+            ... ok i tried option ii and iii and i unfortunatley think i have to use option i and brute force my way
                 through this
+
+3/25
+    NOTE: you have to power average not voltage average the FFT
+        since the samples are phase misaligned, that 
 
 # we have a lot of different filepaths organized as the following
     # high_power_mode

@@ -27,7 +27,6 @@ except ImportError:
 # 2Mhz      |   32e6    |   99.854 kHz  x
 # 3Mhz      |   48e6    |   99.976 kHz  x
 # 4Mhz      |   64e6    |   100.098 kHz
-
 # 5Mhz      |   80e6    |   99.487 kHz  x
 
 # 6Mhz      |   96e6    |   98.877 kHz
