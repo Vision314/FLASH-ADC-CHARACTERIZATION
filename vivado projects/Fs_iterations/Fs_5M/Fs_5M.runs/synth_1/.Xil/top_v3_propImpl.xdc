@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc rfile:../../../SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc} rfile:../../../Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:22 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN L17 [get_ports sysclk]    ; # IO_L12P_T1_MRCC_14 Sch=gclk
 set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]

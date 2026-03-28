@@ -21,7 +21,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1'
+HD_PWD='/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

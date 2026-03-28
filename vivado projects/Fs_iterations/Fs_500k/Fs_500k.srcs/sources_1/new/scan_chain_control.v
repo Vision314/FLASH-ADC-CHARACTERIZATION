@@ -93,7 +93,8 @@ module scan_chain_control(
                         SCAN_SEL <= 1'b0;
                         SCAN_CLK <= 1'b0;
 //                        scan_chain <= {19'd0, adc_setting, 31'd0, adc_setting, 11'd0};
-                            scan_chain <= {4'b0010, 16'd0, adc_setting, 11'b00100000100, 4'b0010, 16'd0, adc_setting, 11'b00100000100, 6'b001011, 4'b0100};
+//                            scan_chain <= {4'b0010, 16'd0, adc_setting, 11'b00100000100, 4'b0010, 16'd0, adc_setting, 11'b00100000100, 6'b001011, 4'b0100};
+                            scan_chain <= {4'b0000, 16'd0, adc_setting, 11'b00000000000, 4'b0000, 16'd0, adc_setting, 11'b00000000000, 6'b001011, 4'b0100};
                     end else if (scan_ce) begin
 //                        SCAN_SEL <= 1'b0;
                         if (scan_done) begin

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Mon Mar 23 18:05:27 2026
+| Date             : Thu Mar 26 00:06:07 2026
 | Host             : rocco running 64-bit Ubuntu 24.04.4 LTS
 | Command          : report_power -file top_v3_power_routed.rpt -pb top_v3_power_summary_routed.pb -rpx top_v3_power_routed.rpx
 | Design           : top_v3
@@ -53,13 +53,13 @@ Table of Contents
 | On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
 +-------------------------+-----------+----------+-----------+-----------------+
 | Clocks                  |    <0.001 |        6 |       --- |             --- |
-| Slice Logic             |    <0.001 |      785 |       --- |             --- |
-|   LUT as Logic          |    <0.001 |      258 |     20800 |            1.24 |
-|   Register              |    <0.001 |      325 |     41600 |            0.78 |
+| Slice Logic             |    <0.001 |      788 |       --- |             --- |
+|   LUT as Logic          |    <0.001 |      262 |     20800 |            1.26 |
+|   Register              |    <0.001 |      326 |     41600 |            0.78 |
 |   CARRY4                |    <0.001 |       30 |      8150 |            0.37 |
 |   Others                |     0.000 |       77 |       --- |             --- |
 |   LUT as Shift Register |     0.000 |        1 |      9600 |            0.01 |
-| Signals                 |    <0.001 |      600 |       --- |             --- |
+| Signals                 |    <0.001 |      604 |       --- |             --- |
 | Block RAM               |    <0.001 |       32 |        50 |           64.00 |
 | MMCM                    |     0.092 |        1 |         5 |           20.00 |
 | I/O                     |     0.001 |       47 |       106 |           44.34 |

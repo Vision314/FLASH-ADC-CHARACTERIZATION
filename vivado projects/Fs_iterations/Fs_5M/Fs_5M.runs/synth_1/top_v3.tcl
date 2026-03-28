@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/top_v3.tcl"
+  variable script "/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/top_v3.tcl"
   variable category "vivado_synth"
 }
 
@@ -58,7 +58,6 @@ if {$::dispatch::connected} {
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param xicom.use_bs_reader 1
 set_param chipscope.maxJobs 2
-set_param tcl.statsThreshold 360
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -67,33 +66,33 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.cache/wt [current_project]
-set_property parent.project_path /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.xpr [current_project]
+set_property webtalk.parent_dir {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.cache/wt} [current_project]
+set_property parent.project_path {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.xpr} [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:cmod_a7-35t:part0:1.2 [current_project]
-set_property ip_output_repo /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.cache/ip [current_project]
+set_property ip_output_repo {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/baud_match.v
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/new/debouncer.v
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/rx.v
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/new/scan_chain_control.v
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/tx.v
-  /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v}
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/baud_match.v}
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/new/debouncer.v}
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/rx.v}
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/new/scan_chain_control.v}
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/tx.v}
+  {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v}
 }
-read_ip -quiet /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/ip/tx_fifo/tx_fifo.xci
-set_property used_in_implementation false [get_files -all /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/tx_fifo/tx_fifo.xdc]
-set_property used_in_implementation false [get_files -all /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/tx_fifo/tx_fifo_ooc.xdc]
+read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/ip/tx_fifo/tx_fifo.xci}}
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/tx_fifo/tx_fifo.xdc}}]
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/tx_fifo/tx_fifo_ooc.xdc}}]
 
-read_ip -quiet /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -104,12 +103,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc
-set_property used_in_implementation false [get_files /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+read_xdc {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc}}
+set_property used_in_implementation false [get_files {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/utils_1/imports/synth_1/top_v3.dcp
+read_checkpoint -auto_incremental -incremental {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/utils_1/imports/synth_1/top_v3.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

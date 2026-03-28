@@ -3,27 +3,27 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Mar 23 17:27:34 2026
-# Process ID         : 738037
-# Current directory  : /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1
+# Start of session at: Thu Mar 26 00:49:04 2026
+# Process ID         : 974731
+# Current directory  : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1
 # Command line       : vivado -log top_v3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_v3.tcl
-# Log file           : /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/top_v3.vds
-# Journal file       : /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/vivado.jou
+# Log file           : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/top_v3.vds
+# Journal file       : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/vivado.jou
 # Running On         : rocco
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.4 LTS
 # Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
-# CPU Frequency      : 2944.634 MHz
+# CPU Frequency      : 3401.435 MHz
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 8058 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 12353 MB
-# Available Virtual  : 2923 MB
+# Available Virtual  : 3750 MB
 #-----------------------------------------------------------
 source top_v3.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/utils_1/imports/synth_1/top_v3.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from /home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/utils_1/imports/synth_1/top_v3.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/utils_1/imports/synth_1/top_v3.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/utils_1/imports/synth_1/top_v3.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_v3 -part xc7a35tcpg236-1
 Starting synth_design
@@ -34,49 +34,49 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 738089
+INFO: [Synth 8-7075] Helper process launched with PID 974807
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2229.906 ; gain = 482.875 ; free physical = 208 ; free virtual = 1516
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2229.977 ; gain = 482.156 ; free physical = 282 ; free virtual = 2335
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-9339] data object 'rx_code' is already declared [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:186]
-INFO: [Synth 8-6826] previous declaration of 'rx_code' is from here [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:173]
-CRITICAL WARNING: [Synth 8-11152] second declaration of 'rx_code' is ignored [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:186]
-INFO: [Synth 8-6157] synthesizing module 'top_v3' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:3]
-INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/new/debouncer.v:1]
-INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/new/debouncer.v:1]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/.Xil/Vivado-738037-rocco/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/.Xil/Vivado-738037-rocco/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'rx' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/rx.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'rx' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/rx.v:3]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:215]
-INFO: [Synth 8-6157] synthesizing module 'adc_control' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'adc_control' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v:3]
-WARNING: [Synth 8-7071] port 'serdes_ce' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:329]
-WARNING: [Synth 8-7071] port 'tx_empty' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:329]
-WARNING: [Synth 8-7023] instance 'u_adc' of module 'adc_control' has 20 connections declared, but only 18 given [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:329]
-INFO: [Synth 8-6157] synthesizing module 'scan_chain_control' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/new/scan_chain_control.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'scan_chain_control' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/new/scan_chain_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tx_fifo' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/.Xil/Vivado-738037-rocco/realtime/tx_fifo_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'tx_fifo' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/.Xil/Vivado-738037-rocco/realtime/tx_fifo_stub.v:6]
-WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:398]
-INFO: [Synth 8-6157] synthesizing module 'baud_match' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/baud_match.v:4]
+CRITICAL WARNING: [Synth 8-9339] data object 'rx_code' is already declared [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:186]
+INFO: [Synth 8-6826] previous declaration of 'rx_code' is from here [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:173]
+CRITICAL WARNING: [Synth 8-11152] second declaration of 'rx_code' is ignored [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:186]
+INFO: [Synth 8-6157] synthesizing module 'top_v3' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/new/debouncer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/.Xil/Vivado-974731-rocco/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/.Xil/Vivado-974731-rocco/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'rx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/rx.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'rx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/rx.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:215]
+INFO: [Synth 8-6157] synthesizing module 'adc_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'adc_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v:3]
+WARNING: [Synth 8-7071] port 'serdes_ce' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:329]
+WARNING: [Synth 8-7071] port 'tx_empty' of module 'adc_control' is unconnected for instance 'u_adc' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:329]
+WARNING: [Synth 8-7023] instance 'u_adc' of module 'adc_control' has 20 connections declared, but only 18 given [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:329]
+INFO: [Synth 8-6157] synthesizing module 'scan_chain_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/new/scan_chain_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'scan_chain_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/new/scan_chain_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'tx_fifo' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/.Xil/Vivado-974731-rocco/realtime/tx_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tx_fifo' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/.Xil/Vivado-974731-rocco/realtime/tx_fifo_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:398]
+INFO: [Synth 8-6157] synthesizing module 'baud_match' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/baud_match.v:4]
 	Parameter M bound to: 8 - type: integer 
-WARNING: [Synth 8-6104] Input port 'baud_clk' has an internal driver [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/baud_match.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'baud_match' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/baud_match.v:4]
-INFO: [Synth 8-6157] synthesizing module 'tx' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/tx.v:4]
-INFO: [Synth 8-6155] done synthesizing module 'tx' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/tx.v:4]
-WARNING: [Synth 8-689] width (4) of port connection 'tx_state' does not match port width (2) of module 'tx' [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:421]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:573]
-WARNING: [Synth 8-6104] Input port 'EXT_ADC_DATA' has an internal driver [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:694]
-INFO: [Synth 8-6155] done synthesizing module 'top_v3' (0#1) [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:3]
-WARNING: [Synth 8-6014] Unused sequential element dout_top_sync0_reg was removed.  [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v:43]
-WARNING: [Synth 8-6014] Unused sequential element dout_top_sync1_reg was removed.  [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v:44]
-WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v:82]
-WARNING: [Synth 8-6014] Unused sequential element serdes_cnt_reg was removed.  [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/adc_control.v:83]
-WARNING: [Synth 8-6014] Unused sequential element cnt_read_reg_reg was removed.  [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/tx.v:47]
-WARNING: [Synth 8-3848] Net btn1_pulse in module/entity top_v3 does not have driver. [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:78]
-WARNING: [Synth 8-3848] Net baud_tick in module/entity top_v3 does not have driver. [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:153]
-WARNING: [Synth 8-3848] Net rx_full in module/entity top_v3 does not have driver. [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/sources_1/imports/new/top_v3.v:157]
+WARNING: [Synth 8-6104] Input port 'baud_clk' has an internal driver [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/baud_match.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'baud_match' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/baud_match.v:4]
+INFO: [Synth 8-6157] synthesizing module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/tx.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'tx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/tx.v:4]
+WARNING: [Synth 8-689] width (4) of port connection 'tx_state' does not match port width (2) of module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:421]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:573]
+WARNING: [Synth 8-6104] Input port 'EXT_ADC_DATA' has an internal driver [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:694]
+INFO: [Synth 8-6155] done synthesizing module 'top_v3' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:3]
+WARNING: [Synth 8-6014] Unused sequential element dout_top_sync0_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v:43]
+WARNING: [Synth 8-6014] Unused sequential element dout_top_sync1_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v:44]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v:82]
+WARNING: [Synth 8-6014] Unused sequential element serdes_cnt_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/adc_control.v:83]
+WARNING: [Synth 8-6014] Unused sequential element cnt_read_reg_reg was removed.  [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/tx.v:47]
+WARNING: [Synth 8-3848] Net btn1_pulse in module/entity top_v3 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:78]
+WARNING: [Synth 8-3848] Net baud_tick in module/entity top_v3 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:153]
+WARNING: [Synth 8-3848] Net rx_full in module/entity top_v3 does not have driver. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/sources_1/imports/new/top_v3.v:157]
 WARNING: [Synth 8-3917] design top_v3 has port PWR_EN driven by constant 1
 WARNING: [Synth 8-3917] design top_v3 has port TEST_EN driven by constant 0
 WARNING: [Synth 8-3917] design top_v3 has port ROLL_SEL driven by constant 0
@@ -108,62 +108,62 @@ WARNING: [Synth 8-7129] Port DOUT_BOT in module adc_control is either unconnecte
 WARNING: [Synth 8-7129] Port tx_empty in module adc_control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v3 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2324.844 ; gain = 577.812 ; free physical = 193 ; free virtual = 1500
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2324.945 ; gain = 577.125 ; free physical = 172 ; free virtual = 2212
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2336.719 ; gain = 589.688 ; free physical = 193 ; free virtual = 1500
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2327.914 ; gain = 580.094 ; free physical = 184 ; free virtual = 2217
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2336.719 ; gain = 589.688 ; free physical = 193 ; free virtual = 1500
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2327.914 ; gain = 580.094 ; free physical = 184 ; free virtual = 2217
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2336.719 ; gain = 0.000 ; free physical = 190 ; free virtual = 1500
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2327.914 ; gain = 0.000 ; free physical = 178 ; free virtual = 2216
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
-Finished Parsing XDC File [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
-Parsing XDC File [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_100M_clk'
-Finished Parsing XDC File [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_100M_clk'
-Parsing XDC File [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/tx_fifo/tx_fifo/tx_fifo_in_context.xdc] for cell 'u_tx_fifo'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_100M_clk'
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_100M_clk'
+Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
 CRITICAL WARNING: [Constraints 18-1056] Clock 'sys_clk_pin' completely overrides clock 'sysclk'.
-New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
-Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
+New: create_clock -period 83.333 -name sys_clk_pin [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:23]
+Previous: create_clock -period 83.333 [get_ports sysclk], [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc:1]
 Resolution: Review the constraint files and remove the redundant clock definition(s). If the clock constraints are not saved in a file, you can first save the constraints to an XDC file and reload the design once the constraints have been corrected.
-WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
-WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
-WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
-Finished Parsing XDC File [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_v3_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_v3_propImpl.xdc].
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'DAC_IO_2'. [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc:116]
+Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_v3_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.srcs/constrs_1/imports/sw/CmodA7_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_v3_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_v3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2448.457 ; gain = 0.000 ; free physical = 201 ; free virtual = 1456
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2445.684 ; gain = 0.000 ; free physical = 214 ; free virtual = 2227
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2448.492 ; gain = 0.000 ; free physical = 198 ; free virtual = 1457
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2445.719 ; gain = 0.000 ; free physical = 211 ; free virtual = 2224
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2448.492 ; gain = 701.461 ; free physical = 187 ; free virtual = 1454
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2445.719 ; gain = 697.898 ; free physical = 361 ; free virtual = 2175
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2456.461 ; gain = 709.430 ; free physical = 187 ; free virtual = 1454
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2453.688 ; gain = 705.867 ; free physical = 361 ; free virtual = 2175
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2456.461 ; gain = 709.430 ; free physical = 187 ; free virtual = 1454
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2453.688 ; gain = 705.867 ; free physical = 360 ; free virtual = 2174
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx'
 INFO: [Synth 8-802] inferred FSM for state register 'adc_state_reg' in module 'adc_control'
@@ -227,7 +227,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'rx_state_reg' using encodi
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'top_v3'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2456.461 ; gain = 709.430 ; free physical = 184 ; free virtual = 1454
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2453.688 ; gain = 705.867 ; free physical = 354 ; free virtual = 2167
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -321,25 +321,25 @@ WARNING: [Synth 8-7129] Port SCAN_OUT in module top_v3 is either unconnected or 
 WARNING: [Synth 8-7129] Port DOUT_BOT in module top_v3 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v3 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2456.461 ; gain = 709.430 ; free physical = 154 ; free virtual = 1434
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2453.688 ; gain = 705.867 ; free physical = 371 ; free virtual = 2142
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2508.461 ; gain = 761.430 ; free physical = 130 ; free virtual = 1352
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2507.688 ; gain = 759.867 ; free physical = 312 ; free virtual = 2060
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2537.508 ; gain = 790.477 ; free physical = 155 ; free virtual = 1326
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2536.734 ; gain = 788.914 ; free physical = 358 ; free virtual = 2040
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2538.516 ; gain = 791.484 ; free physical = 155 ; free virtual = 1326
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2537.742 ; gain = 789.922 ; free physical = 351 ; free virtual = 2034
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -357,37 +357,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -424,43 +424,44 @@ Report Cell Usage:
 |3     |CARRY4  |     8|
 |4     |LUT1    |     9|
 |5     |LUT2    |    28|
-|6     |LUT3    |    52|
+|6     |LUT3    |    53|
 |7     |LUT4    |    36|
-|8     |LUT5    |    38|
-|9     |LUT6    |    85|
+|8     |LUT5    |    37|
+|9     |LUT6    |    87|
 |10    |SRL16E  |     1|
 |11    |FDCE    |    47|
 |12    |FDPE    |     1|
 |13    |FDRE    |   197|
-|14    |FDSE    |     4|
+|14    |FDSE    |     5|
 |15    |IBUF    |     3|
 |16    |OBUF    |    43|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.328 ; gain = 958.297 ; free physical = 125 ; free virtual = 1177
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.555 ; gain = 957.734 ; free physical = 233 ; free virtual = 1918
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2705.328 ; gain = 846.523 ; free physical = 125 ; free virtual = 1177
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2705.336 ; gain = 958.297 ; free physical = 124 ; free virtual = 1177
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2705.555 ; gain = 839.930 ; free physical = 230 ; free virtual = 1915
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2705.562 ; gain = 957.734 ; free physical = 230 ; free virtual = 1915
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2705.336 ; gain = 0.000 ; free physical = 133 ; free virtual = 1187
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2705.562 ; gain = 0.000 ; free physical = 225 ; free virtual = 1914
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.355 ; gain = 0.000 ; free physical = 245 ; free virtual = 1324
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2761.582 ; gain = 0.000 ; free physical = 397 ; free virtual = 2090
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: f10d1f01
+Synth Design complete | Checksum: 736f594a
 INFO: [Common 17-83] Releasing license: Synthesis
 53 Infos, 76 Warnings, 3 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.statsThreshold
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 2761.617 ; gain = 1145.070 ; free physical = 395 ; free virtual = 2088
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1954.812; main = 1954.812; forked = 292.917
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3447.910; main = 2761.586; forked = 994.219
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2785.367 ; gain = 0.000 ; free physical = 239 ; free virtual = 1326
-INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/WCIS-CMODA7-Control-Board/ROOT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT/SCAN_CHAIN_ADC_CONTROL_ALL_WORKING_DO_NOT_EDIT.runs/synth_1/top_v3.dcp' has been generated.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2785.594 ; gain = 0.000 ; free physical = 397 ; free virtual = 2090
+INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_5M/Fs_5M.runs/synth_1/top_v3.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_v3_utilization_synth.rpt -pb top_v3_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 23 17:28:02 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 26 00:49:41 2026...

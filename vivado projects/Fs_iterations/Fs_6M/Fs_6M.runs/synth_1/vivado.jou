@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Mar 23 18:50:44 2026
-# Process ID         : 790168
+# Start of session at: Thu Mar 26 00:59:52 2026
+# Process ID         : 982968
 # Current directory  : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1
 # Command line       : vivado -log top_v3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_v3.tcl
 # Log file           : /home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/Fs_iterations/Fs_6M/Fs_6M.runs/synth_1/top_v3.vds
@@ -13,12 +13,12 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.4 LTS
 # Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1195G7 @ 2.90GHz
-# CPU Frequency      : 3300.096 MHz
+# CPU Frequency      : 3500.000 MHz
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 8058 MB
 # Swap memory        : 4294 MB
 # Total Virtual      : 12353 MB
-# Available Virtual  : 6240 MB
+# Available Virtual  : 5308 MB
 #-----------------------------------------------------------
 source top_v3.tcl -notrace
