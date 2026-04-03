@@ -1,0 +1,136 @@
+════════════════════════════════════════════════
+ STEP 1 — PER-CAPTURE PREPROCESSING
+════════════════════════════════════════════════
+
+FOR each captured waveform:
+
+    1. Convert raw codes to voltage:
+           V[n] = (code[n] / 255) × (REF_HI - REF_LO) + REF_LO
+               → normalized to [-1, +1] V
+
+    2. Remove DC offset:
+           V[n] = V[n] - mean(V)
+
+    3. Apply Hanning window:
+           w[n]    = 0.5 × (1 - cos(2π·n/N))     n = 0..N-1
+           V_w[n]  = V[n] × w[n]
+           
+           Purpose: suppress spectral leakage caused by
+           non-integer number of cycles in capture window
+
+════════════════════════════════════════════════
+ STEP 2 — FFT & TABEI-UEDA INTERPOLATION
+════════════════════════════════════════════════
+
+    4. Compute FFT of windowed signal:
+           G(k) = FFT{V_w[n]},    k = 0..N-1     (complex)
+           |G(k)| = magnitude spectrum
+
+    5. Find peak bin (skip DC):
+           kmax = argmax(|G(k)|),    k = 1..N/2
+
+    6. Tabei & Ueda interpolation (Eq. 16/18):
+           Compare neighbors |G(kmax-1)| vs |G(kmax+1)|
+           Use the larger neighbor to minimize noise sensitivity:
+
+           IF |G(kmax-1)| > |G(kmax+1)|:
+               r  = |G(kmax-1)| / |G(kmax)|
+               fx = kmax + (1 - 2r) / (1 + r)        [Eq. 16]
+           ELSE:
+               r  = |G(kmax+1)| / |G(kmax)|
+               fx = kmax - (1 - 2r) / (1 + r)        [Eq. 18]
+
+           fx is the fractional bin of the true fundamental
+
+    7. Compute interpolated amplitude A (Eq. 21):
+           dx   = fx - kmax
+           sinc = π·dx / sin(π·dx)
+           CG   = sum(w[n]) / N       (coherent gain ≈ 0.5 for Hanning)
+
+           A = (-|G(kmax)| / N) × sinc × (dx-1)(dx+1) / CG × 2
+                                                       [×2 for two-sided FFT]
+
+    8. Compute interpolated phase Po (Eq. 22):
+           Po = (1/2π) × angle( G(kmax) × exp(-jπ·dx) )
+
+    9. Estimated fundamental frequency:
+           f_est = fx × (Fs / N)
+
+════════════════════════════════════════════════
+ STEP 3 — IDEAL SINE RECONSTRUCTION & SUBTRACTION
+════════════════════════════════════════════════
+
+    10. Reconstruct ideal sine wave from T&U parameters:
+            x_ideal[n] = A × cos(2π × f_est × n/Fs + 2π × Po)
+
+    11. Subtract ideal from measured to get noise+distortion residual:
+            x_noise[n] = V[n] - x_ideal[n]
+            
+════════════════════════════════════════════════
+ STEP 4 — POWER COMPUTATION PER CAPTURE
+════════════════════════════════════════════════
+
+    12. Signal power:
+            P_signal = mean(x_ideal[n]²)
+
+    13. Noise+distortion power (SINAD denominator):
+            P_nad = mean(x_noise[n]²)
+
+    14. Harmonic distortion power (THD):
+            FOR each harmonic k = 2..10:
+                f_harm = k × f_est
+                Apply aliasing: fold f_harm into [0, Fs/2]
+                bin_harm = round(f_harm_aliased / Fs × N)
+                P_harm_k = (|FFT_noise[bin_harm]| × correction)² / 2
+            P_harm = sum(P_harm_k)    (RSS of all harmonics)
+
+    15. Noise-only power (SNR denominator):
+            P_noise_only = P_nad - P_harm
+
+════════════════════════════════════════════════
+ STEP 5 — AVERAGE ACROSS 100 CAPTURES
+════════════════════════════════════════════════
+
+    16. Average all power quantities in the power domain:
+            P_signal_avg    = mean(P_signal    across 100 captures)
+            P_nad_avg       = mean(P_nad       across 100 captures)
+            P_harm_avg      = mean(P_harm      across 100 captures)
+            P_noise_avg     = P_nad_avg - P_harm_avg
+
+        Note: averaging in power domain (not dB) is statistically correct
+        and reduces variance without biasing the result
+
+════════════════════════════════════════════════
+ STEP 6 — DYNAMIC METRICS
+════════════════════════════════════════════════
+
+    17. RMS values:
+            RMS_signal     = sqrt(P_signal_avg)
+            RMS_nad        = sqrt(P_nad_avg)
+            RMS_harm       = sqrt(P_harm_avg)
+            RMS_noise_only = sqrt(P_noise_avg)
+
+    18. SINAD  = 20·log10(RMS_signal / RMS_nad)           [dB]
+
+    19. ENOB   = (SINAD - 1.76) / 6.02                    [bits]
+
+    20. SNR    = 20·log10(RMS_signal / RMS_noise_only)    [dB]
+
+    21. THD    = 20·log10(RMS_harm / RMS_signal)          [dBFS]
+
+    22. SFDR   = strongest spur in noise residual FFT     [dBFS]
+
+    23. DR     = -20·log10(RMS_nad / V_fullscale)         [dBFS]
+
+    24. Power  = V_shunt² / R_shunt                       [W]
+            V_shunt measured across 1.02Ω shunt resistor
+
+    25. FOM_W  = Power / (2^ENOB × Fs)                   [J/step]
+            Walden Figure of Merit
+
+════════════════════════════════════════════════
+ REPEAT for all Fs × Power Mode combinations
+════════════════════════════════════════════════
+
+    Output: 21-row results table
+            (7 Fs) × (3 power modes) × all metrics above
