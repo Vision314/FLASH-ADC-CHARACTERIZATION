@@ -104,6 +104,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param xicom.use_bs_reader 1
   set_param chipscope.maxJobs 2
   set_param tcl.statsThreshold 360
   set_param general.usePosixSpawnForFork 1
@@ -123,8 +124,8 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/top_v4.dcp}}
-  read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/ip/tx_fifo/tx_fifo.xci}}
   read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+  read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/ip/tx_fifo/tx_fifo.xci}}
 OPTRACE "read constraints: implementation" START { }
   read_xdc {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/constrs_1/imports/sw/CmodA7_Master.xdc}}
 OPTRACE "read constraints: implementation" END { }

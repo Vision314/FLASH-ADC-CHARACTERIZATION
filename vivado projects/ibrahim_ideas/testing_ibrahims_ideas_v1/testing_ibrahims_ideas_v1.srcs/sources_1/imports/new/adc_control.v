@@ -98,10 +98,9 @@ always @(posedge clk_300M) begin
     end else begin
         case (adc_state)
             5'd0: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                         DATA_SCLK <= 1'b1;
                         ADC_SH <= 1'b0;
-                        
                         if (!tx_full && sample_en) begin
                             tx_data_in <= shift_reg;
                             tx_wr <= 1'b1;
@@ -117,12 +116,12 @@ always @(posedge clk_300M) begin
                         end
                         
                         adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd1: begin
                 tx_wr <= 1'b0;
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
                     ADC_SH <= 1'b1;
@@ -134,82 +133,82 @@ always @(posedge clk_300M) begin
                     // BIT 1
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd2: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
                     
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd3: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
                     
                     // BIT 2
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd4: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
                     
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd5: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
-                    
+                    ADC_PRE <= 1'b1;
                     // BIT 3
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd6: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
                     
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd7: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
                     // BIT 4
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd8: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
                     
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd9: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
                     
@@ -217,72 +216,72 @@ always @(posedge clk_300M) begin
                     // BIT 5
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd10: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
                     
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             
             5'd11: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
 //                    ADC_SH <= 1'b1;
-                    ADC_PRE <= 1'b1;
                     
-                    
+                    ADC_ENC <= 1'b1;
                     
                     // BIT 6
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd12: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
 //                    ADC_SH <= 1'b0;
-//                    ADC_PRE <= 1'b1;
+                    
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd13: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
-//                    ADC_SH <= 1'b0;
-                    ADC_ENC <= 1'b1;
+                    
+                    
                     
                     
                     // BIT 7
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= adc_state + 1;
-//                end
+                    
+                end
             end
             
             5'd14: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b1;
                     
                     ADC_CLK <= 1'b1;
                     
                     adc_state <= adc_state + 1;
-//                end
+                end
             end
             
             5'd15: begin
-//                if (base_clk_en) begin
+                if (base_clk_en) begin
                     DATA_SCLK <= 1'b0;
                     
                     DATA_LOAD <= 1'b1;
@@ -291,7 +290,7 @@ always @(posedge clk_300M) begin
                     // BIT 8
                     shift_reg <= {shift_reg[6:0], DOUT_TOP};
                     adc_state <= 0;
-//                end
+                end
             end
             
             

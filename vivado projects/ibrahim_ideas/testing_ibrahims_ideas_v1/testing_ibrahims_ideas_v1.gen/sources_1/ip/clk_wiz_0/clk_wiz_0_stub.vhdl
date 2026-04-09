@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Mon Apr  6 20:33:50 2026
+-- Date        : Mon Apr  6 18:37:37 2026
 -- Host        : rocco running 64-bit Ubuntu 24.04.4 LTS
--- Command     : write_vhdl -force -mode synth_stub {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado
---               projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_stub.vhdl}
+-- Command     : write_vhdl -force -mode synth_stub -rename_top clk_wiz_0 -prefix
+--               clk_wiz_0_ clk_wiz_0_stub.vhdl
 -- Design      : clk_wiz_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

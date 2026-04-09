@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 2
 set_param tcl.statsThreshold 360
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
@@ -84,14 +86,14 @@ read_verilog -library xil_defaultlib {
   {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/imports/new/tx.v}
   {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/top_v4.v}
 }
-read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/ip/tx_fifo/tx_fifo.xci}}
-set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/tx_fifo/tx_fifo.xdc}}]
-set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/tx_fifo/tx_fifo_ooc.xdc}}]
-
 read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
 set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
 set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
+
+read_ip -quiet {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/ip/tx_fifo/tx_fifo.xci}}
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/tx_fifo/tx_fifo.xdc}}]
+set_property used_in_implementation false [get_files -all {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.gen/sources_1/ip/tx_fifo/tx_fifo_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -105,6 +107,8 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 read_xdc {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/constrs_1/imports/sw/CmodA7_Master.xdc}}
 set_property used_in_implementation false [get_files {{/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/constrs_1/imports/sw/CmodA7_Master.xdc}}]
 
+read_xdc dont_touch.xdc
+set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
 read_checkpoint -auto_incremental -incremental {/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/utils_1/imports/synth_1/top_v3.dcp}
