@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 2
 set_param tcl.statsThreshold 360
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }

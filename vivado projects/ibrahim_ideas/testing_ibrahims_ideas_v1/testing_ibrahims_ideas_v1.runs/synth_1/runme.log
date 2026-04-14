@@ -7,7 +7,7 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Mon Apr 13 23:03:08 2026
+  **** Start of session at: Mon Apr 13 23:34:48 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -24,13 +24,13 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 87853
+INFO: [Synth 8-7075] Helper process launched with PID 107870
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2230.008 ; gain = 481.875 ; free physical = 287 ; free virtual = 3504
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2229.730 ; gain = 484.844 ; free physical = 222 ; free virtual = 2673
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top_v4' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/top_v4.v:359]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-87770-rocco/realtime/clk_wiz_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-87770-rocco/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-107814-rocco/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-107814-rocco/realtime/clk_wiz_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'reset_gen' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/top_v4.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'reset_gen' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/top_v4.v:9]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/debouncer.v:1]
@@ -53,8 +53,8 @@ WARNING: [Synth 8-7071] port 'tx_empty' of module 'adc_control' is unconnected f
 WARNING: [Synth 8-7023] instance 'u_adc' of module 'adc_control' has 19 connections declared, but only 17 given [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/top_v4.v:552]
 INFO: [Synth 8-6157] synthesizing module 'scan_chain_control' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/scan_chain_control.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'scan_chain_control' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/scan_chain_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'tx_fifo' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-87770-rocco/realtime/tx_fifo_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'tx_fifo' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-87770-rocco/realtime/tx_fifo_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tx_fifo' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-107814-rocco/realtime/tx_fifo_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tx_fifo' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/.Xil/Vivado-107814-rocco/realtime/tx_fifo_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/imports/new/tx.v:4]
 INFO: [Synth 8-6155] done synthesizing module 'tx' (0#1) [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/imports/new/tx.v:4]
 WARNING: [Synth 8-7071] port 'tx_state' of module 'tx' is unconnected for instance 'u_tx' [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.srcs/sources_1/new/top_v4.v:610]
@@ -99,18 +99,18 @@ WARNING: [Synth 8-7129] Port serdes_ce in module adc_control is either unconnect
 WARNING: [Synth 8-7129] Port tx_empty in module adc_control is either unconnected or has no load
 WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v4 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2324.977 ; gain = 576.844 ; free physical = 286 ; free virtual = 3412
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2325.699 ; gain = 580.812 ; free physical = 163 ; free virtual = 2545
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2330.914 ; gain = 582.781 ; free physical = 340 ; free virtual = 3431
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2337.574 ; gain = 592.688 ; free physical = 167 ; free virtual = 2549
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2330.914 ; gain = 582.781 ; free physical = 340 ; free virtual = 3431
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2337.574 ; gain = 592.688 ; free physical = 167 ; free virtual = 2549
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2330.914 ; gain = 0.000 ; free physical = 328 ; free virtual = 3423
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2337.574 ; gain = 0.000 ; free physical = 166 ; free virtual = 2547
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -135,30 +135,30 @@ Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/
 Finished Parsing XDC File [/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2446.379 ; gain = 0.000 ; free physical = 286 ; free virtual = 3372
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2458.344 ; gain = 0.000 ; free physical = 147 ; free virtual = 2522
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 lscpu: bad usage
 Try 'lscpu --help' for more information.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2446.414 ; gain = 0.000 ; free physical = 287 ; free virtual = 3373
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2458.379 ; gain = 0.000 ; free physical = 146 ; free virtual = 2520
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2446.414 ; gain = 698.281 ; free physical = 407 ; free virtual = 3356
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2458.379 ; gain = 713.492 ; free physical = 155 ; free virtual = 2524
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2454.383 ; gain = 706.250 ; free physical = 407 ; free virtual = 3356
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2466.348 ; gain = 721.461 ; free physical = 155 ; free virtual = 2523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2454.383 ; gain = 706.250 ; free physical = 407 ; free virtual = 3356
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2466.348 ; gain = 721.461 ; free physical = 147 ; free virtual = 2523
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'rx'
 INFO: [Synth 8-802] inferred FSM for state register 'rx_state_reg' in module 'uart_cmd_parser'
@@ -222,7 +222,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'scan_state_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'dac_spi_ctrl'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2454.383 ; gain = 706.250 ; free physical = 448 ; free virtual = 3362
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2466.348 ; gain = 721.461 ; free physical = 145 ; free virtual = 2515
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -317,25 +317,25 @@ WARNING: [Synth 8-3917] design top_v4 has port ADDR_LATCH driven by constant 0
 WARNING: [Synth 8-7129] Port SCAN_OUT in module top_v4 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port EXT_ADC_DATA in module top_v4 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2454.383 ; gain = 706.250 ; free physical = 423 ; free virtual = 3353
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2466.348 ; gain = 721.461 ; free physical = 177 ; free virtual = 2503
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2508.383 ; gain = 760.250 ; free physical = 326 ; free virtual = 3276
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2508.348 ; gain = 763.461 ; free physical = 150 ; free virtual = 2417
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2542.430 ; gain = 794.297 ; free physical = 299 ; free virtual = 3234
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2542.395 ; gain = 797.508 ; free physical = 197 ; free virtual = 2405
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2543.438 ; gain = 795.305 ; free physical = 288 ; free virtual = 3225
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2550.402 ; gain = 805.516 ; free physical = 190 ; free virtual = 2399
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -353,37 +353,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 319 ; free virtual = 3098
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 143 ; free virtual = 2240
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 319 ; free virtual = 3098
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 143 ; free virtual = 2240
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 327 ; free virtual = 3098
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 141 ; free virtual = 2247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 327 ; free virtual = 3098
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 141 ; free virtual = 2247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 327 ; free virtual = 3098
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 141 ; free virtual = 2247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 327 ; free virtual = 3098
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 141 ; free virtual = 2247
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -433,19 +433,19 @@ Report Cell Usage:
 |16    |OBUF    |    43|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.250 ; gain = 959.117 ; free physical = 327 ; free virtual = 3098
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.215 ; gain = 962.328 ; free physical = 141 ; free virtual = 2247
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2707.250 ; gain = 843.617 ; free physical = 315 ; free virtual = 3094
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2707.258 ; gain = 959.117 ; free physical = 315 ; free virtual = 3095
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2707.215 ; gain = 841.523 ; free physical = 141 ; free virtual = 2246
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2707.223 ; gain = 962.328 ; free physical = 141 ; free virtual = 2246
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2707.258 ; gain = 0.000 ; free physical = 314 ; free virtual = 3094
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2707.223 ; gain = 0.000 ; free physical = 146 ; free virtual = 2243
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2763.277 ; gain = 0.000 ; free physical = 500 ; free virtual = 3264
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2763.242 ; gain = 0.000 ; free physical = 293 ; free virtual = 2405
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -458,7 +458,7 @@ synth_design completed successfully
 INFO: [Common 17-600] The following parameters have non-default value.
 tcl.statsThreshold
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2787.289 ; gain = 0.000 ; free physical = 470 ; free virtual = 3266
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2787.254 ; gain = 0.000 ; free physical = 288 ; free virtual = 2409
 INFO: [Common 17-1381] The checkpoint '/home/frankie/WCIS/FLASH-ADC-CHARACTERIZATION/vivado projects/ibrahim_ideas/testing_ibrahims_ideas_v1/testing_ibrahims_ideas_v1.runs/synth_1/top_v4.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_v4_utilization_synth.rpt -pb top_v4_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 13 23:03:51 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 13 23:35:22 2026...
