@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1775179268" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/top_v3.dcp">
-  <File Type="VDS-TIMING-PB" Name="top_v4_timing_summary_synth.pb"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_v4_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="top_v4.dcp"/>
-  <File Type="RDS-UTIL-PB" Name="top_v4_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="top_v4_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_v4_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="top_v4.vds"/>
-  <File Type="REPORTS-TCL" Name="top_v4_reports.tcl"/>
+  <File Type="RDS-UTIL" Name="top_v4_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_v4_utilization_synth.pb"/>
   <File Type="PA-TCL" Name="top_v4.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_v4_reports.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/new/adc_control.v">
@@ -105,6 +102,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2025"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
   <BlockFileSet Type="BlockSrcs" Name="tx_fifo"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

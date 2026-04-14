@@ -42,7 +42,7 @@ BAUD_MATCH_MULT = 8
 FS = CLK_GEN_F / 16
 
 # ── Configuration ────────────────────────────────────────────────────────────
-PORT                 = '/dev/ttyUSB2'
+PORT                 = '/dev/ttyUSB1'
 BAUDRATE             = (CLK_GEN_F / 16) / BAUD_MATCH_MULT
 BUFFER_SIZE          = 4096
 RAMP_FALL_THRESHOLD  = 200    # minimum drop (0–255) to count as a sawtooth reset
